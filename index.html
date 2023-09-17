@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>IllustSearchByTags</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>IllustSearchByTags</h1>
+
+    <h3>タグ一覧</h3>
+
+        <p>クリックすると画像が表示されます。</p>
+
+        <div id="tags">
+            <ul>
+                <li><a href="#all-illusts" data-tag="#tag1">#tag1</a></li>
+                <li><a href="#all-illusts" data-tag="#tag2">#tag2</a></li>
+                <li><a href="#all-illusts" data-tag="#tag3">#tag3</a></li>
+            </ul>
+        </div> <!-- tags -->
+
+        <div id="all-illusts">
+
+            <h3>カップリングを含まないイラスト</h3>
+            
+            <div class="works">
+                <ul class="illust">
+                    <li class="new work" data-tags="#tag1 #tag2">
+                        <a href="#">
+                            <div class="work-image">
+                                <img src="img/img1.jpg">
+                            </div> <!-- work-image -->
+                            <div class="work-info">
+                                <h3>illust 1</h3>
+                                <p>#tag1 #tag2</p>
+                            </div> <!-- work-info -->
+                        </a>
+                    </li>
+          
+                    <li class="work" data-tags="#tag1 #tag3">
+                        <a href="#">
+                            <div class="work-image">
+                                <img src="img/img2.jpg">
+                            </div> <!-- work-image -->
+                            <div class="work-info">
+                                <h3>illust 2</h3>
+                                <p>#tag1 #tag3</p>
+                            </div> <!-- work-info -->
+                        </a>
+                    </li>
+          
+                    <li class="work" data-tags="#tag2">
+                        <a href="#">
+                            <div class="work-image">
+                                <img src="img/img3.jpg">
+                            </div> <!-- work-image -->
+                            <div class="work-info">
+                                <h3>illust 3</h3>
+                                <p>#tag2</p>
+                            </div> <!-- work-info -->
+                        </a>
+                    </li>
+                </ul>
+            </div> <!-- works -->
+        
+        </div> <!-- all-illusts -->
+
+        <p>Photo by <a href="https://food-foto.jp/">food.foto</a></p>
+
+    <script src="workSearch.js"></script>
+
+</body>
+
+</html>
